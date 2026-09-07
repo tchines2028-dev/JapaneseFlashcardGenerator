@@ -96,6 +96,13 @@ public class Main {
             for (Flashcard newCard: deck) {
                 System.out.println(newCard);
             }
+
+
+            System.out.println("Cards #: " + deck.size());
+
+            AnkiExporter ankiExporter = new AnkiExporter();
+            ankiExporter.export(deck, "ankiTest.txt");
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
