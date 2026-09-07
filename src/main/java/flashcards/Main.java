@@ -48,7 +48,7 @@ public class Main {
         try {
             List<VocabularyEntry> entries = parser.parsetoList("input/vocab_test.txt");
             FlashcardGenerator generator = new FlashcardGenerator();
-            List<Flashcard> deck = generator.generate(entries, FlashcardType.KANJI_TO_ENGLISH);
+            List<Flashcard> deck = generator.generate(entries, FlashcardType.KANJI_TO_ENGLISH, true);
 
             System.out.println("\n KANJI_TO_ENGLISH Flashcard Test \n");
             for (Flashcard newCard: deck) {
@@ -61,7 +61,7 @@ public class Main {
         try {
             List<VocabularyEntry> entries = parser.parsetoList("input/vocab_test.txt");
             FlashcardGenerator generator = new FlashcardGenerator();
-            List<Flashcard> deck = generator.generate(entries, FlashcardType.ENGLISH_TO_KANJI);
+            List<Flashcard> deck = generator.generate(entries, FlashcardType.ENGLISH_TO_KANJI, false);
 
             System.out.println("\n ENGLISH_TO_KANJI Flashcard Test \n");
             for (Flashcard newCard: deck) {
@@ -75,7 +75,7 @@ public class Main {
         try {
             List<VocabularyEntry> entries = parser.parsetoList("input/vocab_test.txt");
             FlashcardGenerator generator = new FlashcardGenerator();
-            List<Flashcard> deck = generator.generate(entries, FlashcardType.HIRAGANA_TO_KANJI);
+            List<Flashcard> deck = generator.generate(entries, FlashcardType.HIRAGANA_TO_KANJI, false);
 
             System.out.println("\n HIRAGANA_TO_KANJI Flashcard Test \n");
             for (Flashcard newCard: deck) {
@@ -90,7 +90,7 @@ public class Main {
         try {
             List<VocabularyEntry> entries = parser.parsetoList("input/vocab_test.txt");
             FlashcardGenerator generator = new FlashcardGenerator();
-            List<Flashcard> deck = generator.generate(entries, FlashcardType.KANJI_TO_HIRAGANA);
+            List<Flashcard> deck = generator.generate(entries, FlashcardType.KANJI_TO_HIRAGANA, false);
 
             System.out.println("\n KANJI_TO_HIRAGANA Flashcard Test \n");
             for (Flashcard newCard: deck) {
