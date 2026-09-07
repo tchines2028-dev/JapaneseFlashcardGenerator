@@ -1,8 +1,17 @@
 package flashcards;
 import java.util.*;
+
 public class FlashcardGenerator {
 
-    public List<Flashcard> generate(List<VocabularyEntry> vocabularyEntries, FlashcardType cardType, boolean reversed){
+    /*
+    * Returns a List of flashcards with the given specifications
+    * I:
+    * vocabularyEntries: List of VocabularYEntry from a file
+    * cardType: FLashcardType The primary type of cards (What is on the front and back) in the deck
+    * reversed: a boolean where true = include all the reversed version of the cards in the deck as well
+    * shuffle: boolean where true = the cards in the deck will be shuffled; false = the cards in the deck will be in their given order
+     */
+    public List<Flashcard> generate(List<VocabularyEntry> vocabularyEntries, FlashcardType cardType, boolean reversed, boolean shuffle){
 
         List<Flashcard> deck = new ArrayList<>();
 
@@ -61,6 +70,10 @@ public class FlashcardGenerator {
             if (reversed) {
                 deck.add(cardReverse);
             }
+        }
+
+        if(shuffle){
+            Collections.shuffle(deck);
         }
 
         return deck;

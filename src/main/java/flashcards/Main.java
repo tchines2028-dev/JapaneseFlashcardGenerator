@@ -24,7 +24,7 @@ public class Main {
         );
 
         Flashcard card = new Flashcard(line.getVocabulary(), line.getEnglish());
-        System.out.println(card.getFront() + ", " + card.getBack());
+        System.out.println("\n " + card.getFront() + ", " + card.getBack() + "\n");
 
         VocabParser parser = new VocabParser();
         try {
@@ -48,7 +48,7 @@ public class Main {
         try {
             List<VocabularyEntry> entries = parser.parsetoList("input/vocab_test.txt");
             FlashcardGenerator generator = new FlashcardGenerator();
-            List<Flashcard> deck = generator.generate(entries, FlashcardType.KANJI_TO_ENGLISH, true);
+            List<Flashcard> deck = generator.generate(entries, FlashcardType.KANJI_TO_ENGLISH, true, false);
 
             System.out.println("\n KANJI_TO_ENGLISH Flashcard Test \n");
             for (Flashcard newCard: deck) {
@@ -61,7 +61,7 @@ public class Main {
         try {
             List<VocabularyEntry> entries = parser.parsetoList("input/vocab_test.txt");
             FlashcardGenerator generator = new FlashcardGenerator();
-            List<Flashcard> deck = generator.generate(entries, FlashcardType.ENGLISH_TO_KANJI, false);
+            List<Flashcard> deck = generator.generate(entries, FlashcardType.ENGLISH_TO_KANJI, false, true);
 
             System.out.println("\n ENGLISH_TO_KANJI Flashcard Test \n");
             for (Flashcard newCard: deck) {
@@ -75,7 +75,7 @@ public class Main {
         try {
             List<VocabularyEntry> entries = parser.parsetoList("input/vocab_test.txt");
             FlashcardGenerator generator = new FlashcardGenerator();
-            List<Flashcard> deck = generator.generate(entries, FlashcardType.HIRAGANA_TO_KANJI, false);
+            List<Flashcard> deck = generator.generate(entries, FlashcardType.HIRAGANA_TO_KANJI, false, false);
 
             System.out.println("\n HIRAGANA_TO_KANJI Flashcard Test \n");
             for (Flashcard newCard: deck) {
@@ -90,7 +90,7 @@ public class Main {
         try {
             List<VocabularyEntry> entries = parser.parsetoList("input/vocab_test.txt");
             FlashcardGenerator generator = new FlashcardGenerator();
-            List<Flashcard> deck = generator.generate(entries, FlashcardType.KANJI_TO_HIRAGANA, false);
+            List<Flashcard> deck = generator.generate(entries, FlashcardType.KANJI_TO_HIRAGANA, false, false);
 
             System.out.println("\n KANJI_TO_HIRAGANA Flashcard Test \n");
             for (Flashcard newCard: deck) {
