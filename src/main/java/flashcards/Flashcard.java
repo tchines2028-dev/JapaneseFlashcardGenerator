@@ -18,5 +18,10 @@ public class Flashcard {
         return back;
     }
 
+    @Override
+    public String toString(){
+
+        return getFront() + " -> " + getBack();
+    }
 
 }
