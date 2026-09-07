@@ -29,6 +29,15 @@ public class VocabularyEntry {
         return priority;
     }
 
+    @Override
+    public String toString(){
+        String marker = "*";
 
+        if (getPriority()){
+            marker = "";
+        }
+
+        return vocabulary + marker + " " + reading +  " : " + english;
+    }
 
 }
