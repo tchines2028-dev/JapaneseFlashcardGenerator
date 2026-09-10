@@ -54,9 +54,16 @@ public class Main {
             for (Flashcard newCard: deck) {
                 System.out.println(newCard);
             }
+
+            AnkiExporter ankiExporter = new AnkiExporter();
+            ankiExporter.export(deck, "ankiTest.txt");
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+        //English to Kanji Flashcard Test
+
 
         try {
             List<VocabularyEntry> entries = parser.parsetoList("input/vocab_test.txt");
@@ -67,10 +74,17 @@ public class Main {
             for (Flashcard newCard: deck) {
                 System.out.println(newCard);
             }
+
+            AnkiExporter ankiExporter = new AnkiExporter();
+            ankiExporter.export(deck, "ankiTest1.txt");
+
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
+
+        //Hiragana to English Flashcard Test
 
         try {
             List<VocabularyEntry> entries = parser.parsetoList("input/vocab_test.txt");
@@ -81,10 +95,15 @@ public class Main {
             for (Flashcard newCard: deck) {
                 System.out.println(newCard);
             }
+            AnkiExporter ankiExporter = new AnkiExporter();
+            ankiExporter.export(deck, "ankiTest2.txt");
+
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
+        //Kanji to Hiragana Flashcard Test
 
 
         try {
@@ -101,7 +120,7 @@ public class Main {
             System.out.println("Cards #: " + deck.size());
 
             AnkiExporter ankiExporter = new AnkiExporter();
-            ankiExporter.export(deck, "ankiTest.txt");
+            ankiExporter.export(deck, "ankiTest3.txt");
 
         } catch (IOException e) {
             throw new RuntimeException(e);
