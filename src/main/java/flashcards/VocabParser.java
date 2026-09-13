@@ -1,5 +1,8 @@
 package flashcards;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.*;
@@ -31,11 +34,18 @@ public class VocabParser {
     * */
     public List<VocabularyEntry> parsetoList(String filePath) throws IOException {
 
+        System.out.println("日本語");
+
         List<VocabularyEntry> vocabList = new ArrayList<>();
 
         try {
 
-            BufferedReader br = new BufferedReader(new FileReader(filePath));
+           // BufferedReader br = new BufferedReader(new FileReader(filePath));
+
+            BufferedReader br = Files.newBufferedReader(
+                    Paths.get(filePath),
+                    StandardCharsets.UTF_8
+            );
 
             String line;
             //create the pattern that breaks every line in the file into the sections of VocabEntry

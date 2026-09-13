@@ -79,5 +79,16 @@ public class FlashcardGenerator {
         return deck;
     }
 
+    public StringBuilder toString(List<Flashcard> deck){
+        StringBuilder deckPrinted = new StringBuilder();
+
+        for(Flashcard flashcard: deck){
+            deckPrinted.append(flashcard).append("\n");
+
+        }
+
+        return  deckPrinted;
+    }
+
 
 }

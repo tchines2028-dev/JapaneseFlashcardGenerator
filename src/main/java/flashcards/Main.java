@@ -23,6 +23,9 @@ public class Main {
                 false
         );
 
+        System.out.println("日本語テスト");
+
+
         Flashcard card = new Flashcard(line.getVocabulary(), line.getEnglish());
         System.out.println("\n " + card.getFront() + ", " + card.getBack() + "\n");
 
