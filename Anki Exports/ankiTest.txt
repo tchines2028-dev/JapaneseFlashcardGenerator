@@ -1,0 +1,70 @@
+言葉	word; language
+word; language	言葉
+努力	effort; hard work
+effort; hard work	努力
+便利	convenient; useful
+convenient; useful	便利
+翻訳	translation
+translation	翻訳
+完璧	perfect; complete
+perfect; complete	完璧
+突然	suddenly; unexpectedly
+suddenly; unexpectedly	突然
+丁寧	polite; courteous
+polite; courteous	丁寧
+否定	denial; rejection
+denial; rejection	否定
+実際	reality; actually
+reality; actually	実際
+お辞儀	bow (greeting or showing respect)
+bow (greeting or showing respect)	お辞儀
+印象	impression
+impression	印象
+正確	accurate; correct
+accurate; correct	正確
+信頼	trust; confidence
+trust; confidence	信頼
+重要	important
+important	重要
+情報	information
+information	情報
+交換	exchange
+exchange	交換
+姿勢	attitude; approach
+attitude; approach	姿勢
+敬意	respect; esteem
+respect; esteem	敬意
+知識	knowledge
+knowledge	知識
+体験	experience (something personally experienced)
+experience (something personally experienced)	体験
+失敗	failure; mistake
+failure; mistake	失敗
+交流	interaction; exchange with others
+interaction; exchange with others	交流
+背景	background; context
+background; context	背景
+正直	honest; honesty
+honest; honesty	正直
+悔しい	frustrated; regretful
+frustrated; regretful	悔しい
+記憶	memory
+memory	記憶
+鮮明	vivid; clear
+vivid; clear	鮮明
+尊重	respect; value highly
+respect; value highly	尊重
+意義	significance; importance
+significance; importance	意義
+得意	good at; one's strength
+good at; one's strength	得意
+共有	sharing; sharing with others
+sharing; sharing with others	共有
+理解	understanding; comprehension
+understanding; comprehension	理解
+成長	growth; development
+growth; development	成長
+営み	human activity; way of life
+human activity; way of life	営み
+価値	value; worth
+value; worth	価値
