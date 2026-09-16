@@ -58,6 +58,8 @@ public class VocabParser {
                     continue;
                 }
 
+                String firstLine = br.readLine();
+                System.out.println("RAW LINE: " + firstLine);
                 VocabularyEntry entry = parseLine(line);
                 vocabList.add(entry);
             }
